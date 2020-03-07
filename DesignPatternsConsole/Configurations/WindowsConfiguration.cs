@@ -2,6 +2,9 @@
 
 namespace DesignPatternsConsole.Configurations
 {
+    /// <summary>
+    /// Windows configuration parameters
+    /// </summary>
     public class WindowsConfiguration : AbstractConfiguration
     {
         private const string PREFIX = "Windows ";

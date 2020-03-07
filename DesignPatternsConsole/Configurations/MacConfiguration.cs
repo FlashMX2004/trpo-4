@@ -2,6 +2,9 @@
 
 namespace DesignPatternsConsole.Configurations
 {
+    /// <summary>
+    /// Mac OS configuration parameters
+    /// </summary>
     public class MacConfiguration : AbstractConfiguration
     {
         private const string PREFIX = "Mac OS ";

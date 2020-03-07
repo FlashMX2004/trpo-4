@@ -4,6 +4,9 @@ using System.Text;
 
 namespace DesignPatternsConsole
 {
+    /// <summary>
+    /// Manager to work with file data
+    /// </summary>
     public static class FileManager
     {
         /// <summary>

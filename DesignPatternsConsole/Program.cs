@@ -16,18 +16,31 @@ namespace DesignPatternsConsole
 
         private static void Main()
         {
-            OS os = FileManager.ReadOSFromFile(READ_FILE_NAME);
+            OS? os = null;
 
-            ConfigurationClient client = os switch
+            try
             {
-                OS.Windows => new ConfigurationClient(new WindowsConfigurationFactory()),
-                OS.Mac => new ConfigurationClient(new MacConfigurationFactory()),
-                OS.Ubuntu => new ConfigurationClient(new UbuntuConfigurationFactory()),
-                _ => null
-            };
-            var configuration = client.GetConfiguration();
+                os = FileManager.ReadOSFromFile(READ_FILE_NAME);
+            }
+            catch
+            {
+                Console.WriteLine($"Uncorrect name of operating system in {READ_FILE_NAME} file!");
+                Console.ReadKey();
+            }
 
-            FileManager.WriteConfigurationToFile(WRITE_FILE_NAME, configuration);
+            if (os != null)
+            {
+                ConfigurationClient client = os.Value switch
+                {
+                    OS.Windows => new ConfigurationClient(new WindowsConfigurationFactory()),
+                    OS.Mac => new ConfigurationClient(new MacConfigurationFactory()),
+                    OS.Ubuntu => new ConfigurationClient(new UbuntuConfigurationFactory()),
+                    _ => null
+                };
+                var configuration = client.GetConfiguration();
+
+                FileManager.WriteConfigurationToFile(WRITE_FILE_NAME, configuration);
+            }
         }
     }
 }

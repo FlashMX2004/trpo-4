@@ -2,6 +2,9 @@
 
 namespace DesignPatternsConsole.Configurations
 {
+    /// <summary>
+    /// Ubuntu configuration parameters
+    /// </summary>
     public class UbuntuConfiguration : AbstractConfiguration
     {
         private const string PREFIX = "Ubuntu ";
