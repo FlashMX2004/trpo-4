@@ -1,0 +1,6 @@
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\bin\Debug\DesignPatternsConsole.exe.config
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\bin\Debug\DesignPatternsConsole.exe
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\bin\Debug\DesignPatternsConsole.pdb
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\obj\Debug\DesignPatternsConsole.csprojAssemblyReference.cache
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\obj\Debug\DesignPatternsConsole.exe
+D:\Вова\Уроки\Институт\Все предметы\Технология разработки программного обеспечения\4\task\DesignPatternsConsole\obj\Debug\DesignPatternsConsole.pdb
